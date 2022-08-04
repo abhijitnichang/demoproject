@@ -1,0 +1,5 @@
+#include<Stdio.h>
+main()
+{
+int n,i fact=1;
+printf("\n enter n= ");
