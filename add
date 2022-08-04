@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+class rev
+{
+        private:
+            int n,sum=0,d,temp;
+        public:
+            void input();
+            void calc();
+        	void display();
+};
+void rev::input()
+{
+        cout<<"\nEnter no.=  ";
+        cin>>n;
+}
+void rev::calc()
+{
+        temp=n;
+        while(n>0)
+        {
+                d=n%10;
+                sum=(sum*10)+d;
+                n=n/10;
+        }
+}
+void rev::display()
+{
+            cout<<"\n Reverse no is= "<<sum;
+}
+int main ()
+{       
+
+        int i;
+        rev r[3];
+        for(i=0;i<3;i++)
+        {
+        r[i].input();
+        r[i].calc();
+        }
+		for(i=0;i<3;i++)
+		{
+			r[i].display();
+		}
+    }
+    
